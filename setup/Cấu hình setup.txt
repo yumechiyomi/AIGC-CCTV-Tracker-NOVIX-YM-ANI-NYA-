@@ -1,0 +1,43 @@
+Quy tắc cú pháp:
+Cấu trúc dòng: Sử dụng cặp khóa = giá trị (key = value).
+
+Ký tự phân cách: Dấu bằng (=).
+
+Ghi chú: Các dòng bắt đầu bằng dấu thăng (#) sẽ bị bỏ qua.
+
+Dòng trống: Các dòng trống sẽ bị hệ thống tự động lọc bỏ.
+
+Xử lý chuỗi: * Hệ thống sẽ tự động cắt khoảng trắng dư thừa ở đầu và cuối của cả khóa và giá trị.
+
+Giá trị sẽ được chuyển về dạng chữ thường (lowercase) khi nạp vào hệ thống.
+
+Mẫu tệp setup/log.txt chuẩn cho hệ thống NOVIX YM ANI:
+Plaintext
+# ==========================================
+# CẤU HÌNH HỆ THỐNG NOVIX YM ANI (NYA)
+# ==========================================
+
+# Ngưỡng độ tin cậy đối soát (0.0 đến 1.0)
+threshold = 0.75
+
+# Chế độ tìm kiếm trẻ em (true/false)
+child_mode = false
+
+# Cấu hình tải dữ liệu bằng chứng lên máy chủ
+upload_enabled = true
+upload_endpoint = http://api.security.vn/v1/evidence
+
+# Cấu hình phần cứng
+use_gpu = true
+device_id = 0
+
+# Đường dẫn bộ nhớ đệm chứng cứ
+buffer_size = 30
+Cách hệ thống đọc tệp này:
+Trong mã nguồn của bạn, hàm load_config thực hiện việc bóc tách như sau:
+
+Nó tìm dấu = đầu tiên trên mỗi dòng.
+
+Tách phần bên trái làm tên cấu hình (key) và phần bên phải làm giá trị (value).
+
+Ví dụ: CHILD_MODE = True sẽ được lưu trong bộ nhớ là {'child_mode': 'true'}.

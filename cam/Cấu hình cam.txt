@@ -1,0 +1,8 @@
+Mỗi camera phải có một tệp cấu hình riêng định dạng JSON trong thư mục cam/.
+JSON
+{
+  "camera_id": "LOBBY_01",
+  "name": "Sảnh Chính",
+  "url": "rtsp://admin:password@192.168.1.100:554/stream1"
+}
+Lưu ý: Nếu dùng webcam, hãy đặt "url": "0".
