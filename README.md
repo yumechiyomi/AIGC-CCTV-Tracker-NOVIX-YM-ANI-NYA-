@@ -3,7 +3,7 @@
 **NOVIX YM ANI** là hệ thống truy vết đối tượng thông minh thông qua mạng lưới CCTV, dựa trên công nghệ **Tái cấu trúc đặc điểm giải phẫu 3D (3D Anatomical Invariants Reconstruction)**. Dự án được thiết kế chuyên biệt để hỗ trợ công tác an ninh, giúp duy trì nhận diện đối tượng ngay cả khi bị che khuất hoặc thay đổi diện mạo theo thời gian.
 
 > [!IMPORTANT]
-> **Tình trạng:** Beta.
+> **Tình trạng:** Beta.  
 > **Bản quyền:** Sản phẩm được phát triển độc lập 100% bởi Yume Chiyomi. Mọi hành vi sao chép hoặc thương mại hóa ngoài mục đích an ninh đều vi phạm quyền sở hữu trí tuệ của tác giả.
 
 ## Công nghệ cốt lõi
