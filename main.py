@@ -52,14 +52,11 @@ def main():
     print(f"Đang truy vết đối tượng: {query_path}")
     
     try:
-        # Kích hoạt bộ xử lý từ _search.py
-        # Bạn có thể ép cấu hình mạnh nhất tại đây
         run(
             query_image_path=query_path,
-            # Có thể truyền thêm cấu hình trực tiếp nếu cần
         )
     except KeyboardInterrupt:
-        print("\nHệ thống đã dừng theo yêu cầu.")
+        print("Hệ thống đã dừng theo yêu cầu.")
     except Exception as e:
         print(f"Lỗi vận hành: {e}")
 
