@@ -1,0 +1,5 @@
+SETPOINT 1
+S python3 main.py
+RUN ANS
+START
+POINT1
